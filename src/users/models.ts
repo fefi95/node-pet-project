@@ -10,9 +10,9 @@ export interface User {
 
 const UserSchema = new mongoose.Schema({
   name: { type: String, required: [true] },
-  last_name: {type: String},
+  last_name: { type: String },
   email: { type: String, unique: true, required: [true] } ,
-  avatar: {type: String}
+  avatar: { type: String }
 });
 
 export const UserModel = mongoose.model('User', UserSchema);

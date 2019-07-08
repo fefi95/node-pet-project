@@ -8,3 +8,7 @@ export async function addUser(user: User): Promise<User> {
 export async function getAllUsers(): Promise<User> {
   return await UserModel.find().exec();
 }
+
+export async function deleteUser(id: string) {
+  return UserModel.deleteOne({ _id: id });
+}
