@@ -15,7 +15,7 @@
       "node_modules/@types"
     ],
     "noImplicitAny": false,
-    "types" : ["node"]
+    "types" : ["node", "jest"],
   },
   "include": [
     "src/**/*.*"
